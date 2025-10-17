@@ -1,0 +1,1 @@
+因為我在github上面新增資料夾一直沒有成功，所以我直接把"processed_data"這個資料夾中的檔案直接上傳到data_science，所以程式碼中所有"processed_data/output_avg_price.csv"、"processed_data/output_long_format.csv"、"processed_data/output_mid_price.csv"和"processed_data/output_volume.csv"都要把前面的"processed_data/"刪除
