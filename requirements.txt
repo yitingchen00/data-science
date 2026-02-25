@@ -1,6 +1,0 @@
-pandas
-lightgbm
-scikit-learn
-matplotlib
-openpyxl
-xlrd
