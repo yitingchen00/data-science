@@ -1,9 +1,52 @@
-因為我在github上面新增資料夾一直沒有成功，所以我直接把"processed_data"這個資料夾中的檔案直接上傳到data_science，所以程式碼中所有"processed_data/output_avg_price.csv"、"processed_data/output_long_format.csv"、"processed_data/output_mid_price.csv"和"processed_data/output_volume.csv"都要把前面的"processed_data/"刪除
+\# 蔬菜價格預測分析 - Gen AI 期末專案
 
-"Project_111401518 (2).ipynb"是分析的執行檔
 
-result含所有輸入資料及數據分析結果
-、feature_importance.png"是分析結果之一
-"lightgbm_vegetable_price_model.txt"是模型的參數
-"output_avg_price.csv"、"output_long_format.csv"、"output_mid_price.csv"、"output_volume.csv"是資料清理過的檔案
-"prediction_comparison.png"是以一種蔬菜為例比較實際值與預測值
+
+這是一個利用機器學習（LightGBM）預測蔬菜價格的專案，涵蓋了從資料清理、特徵工程到模型預測的完整流程。
+
+
+
+\## 專案架構與檔案說明
+
+
+
+\### 核心程式碼
+
+\* \*\*`GenAI\\\_Final\\\_Project.ipynb`\*\*: 專案的主要執行檔，包含資料處理與分析邏輯。
+
+
+
+\### `results/` 資料夾 (數據與成果)
+
+本資料夾收納了所有輸入資料、清理後的數據以及分析圖表：
+
+\* \*\*資料清理檔案\*\*:
+
+  \* `output\\\_avg\\\_price.csv`, `output\\\_mid\\\_price.csv`, `output\\\_volume.csv`, `output\\\_long\\\_format.csv`
+
+\* \*\*分析結果圖表\*\*:
+
+  \* `feature\\\_importance.png`: 顯示模型預測時的重要特徵排序。
+
+  \* `prediction\\\_comparison.png`: 以單一蔬菜為例，對比實際價格與預測價格。
+
+\* \*\*模型參數\*\*:
+
+  \* `lightgbm\\\_vegetable\\\_price\\\_model.txt`: 訓練完成後存儲的模型權重檔案。
+
+
+
+\## ⚠️ 開發筆記 (程式碼路徑修正)
+
+
+
+本專案已完成資料夾重構。若要執行 `GenAI\\\_Final\\\_Project.ipynb`，請確保讀取路徑已進行以下修正：
+
+
+
+1\. \*\*移除舊路徑\*\*: 請將原先程式碼中所有 `processed\\\_data/` 的前綴刪除。
+
+2\. \*\*更新至新位置\*\*: 由於目前資料位於 `results/` 資料夾下，請將路徑更新為 `results/檔案名稱`。
+
+   \* \*範例：\* `pd.read\\\_csv("results/output\\\_avg\\\_price.csv")`
+
